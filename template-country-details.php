@@ -29,11 +29,19 @@ get_header(); ?>
     <h3 class="country-title">Country: <b>
       <?=$country->country_name?>
       </b></h3>
-    <div class="imgDiv"> <img src="<?=get_template_directory_uri()?>/images/<?=$country->country_image?>">
+    <div class="imgDiv"> 
+    
+    <!-- TODO Dummy image it be loaded from database -->
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa5pqwq97VPHwZ1mCq61d5BmhiGH4gAZHLrAdQJDT2NnUrPN1h" style="right: 255px; height: 124px;">
+		
+    <img src="<?=get_template_directory_uri()?>/images/<?=$country->country_image?>">
       <iframe src="//www.youtube.com/embed/?listType=playlist&list=<?=$country->country_playlist?>" class="country-playlist" style="margin:200px 0 0 0;"> </iframe>
-       <p>This website supports <br>
-	  #1 the United Nations World Tourism Organization's goal to maximize tourism's contribution to poverty reduction and increase awareness on the sector's development potential..</p> 
-	 #2 the ASEAN Tourism Strategic Plan 2016-2025 seeking to make a greater contribution towards the ASEAN integration goal in the post 2015 decade of moving to an economic growth scenario that is more “inclusive,” “green” and “knowledge-based
+     <!--   <p>This website supports <br>
+	  #1 the United Nations World Tourism Organization's goal to maximize tourism's contribution to poverty reduction and increase awareness on the sector's development potential..</p> -->
+	  
+	   <p><b>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</b>
+	 </p> 
+	 #2 the ASEAN Tourism Strategic Plan 2016-2025 seeking to make a greater contribution towards the ASEAN integration goal in the post 2015 decade of moving to an economic growth scenario that is more â€œinclusive,â€� â€œgreenâ€� and â€œknowledge-based
 	 
 	  </div>
 	    <table border="0" width="500" class="video" >
