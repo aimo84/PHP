@@ -37,27 +37,17 @@ get_header(); ?>
 				$secondHeadQuote = $country->second_head_quote;
 				?>
     	<h3 class="country-title">Country: <b><?php echo $countryName; ?></b></h3>
-		
-		<span>
-		
-		<!-- Show second header images if not null workable for PAN America only--> 
-			<?php 
+    	
+    <div class="imgDiv">
+    	<?php 
     	if(strlen($secondHeadImage)> 0){
-			
-				if(strlen($secondHeadQuote)> 0){
     	    ?>	
-    	    	<h4 style="font-style: italic;"><?php echo $secondHeadQuote ?></h4>
-				<?php }?>
-   			 	<a href="<?php echo $secondHeadWikiLink; ?>" target="_blank"><img style ="width: 183px;right: 268px; height: 198px;" src="<?=get_template_directory_uri()?>/president_images/<?php echo $secondHeadImage;?>"> </a>
+    	    	<h5><?php echo $secondHeadQuote ?></h5>
+   			 	<a href="<?php echo $secondHeadWikiLink; ?>"><img src="<?=get_template_directory_uri()?>/president_images/<?php echo $secondHeadImage; ?>"> </a>
     	 <?php 
     	 }
     	 ?>
-		 </span>
-    	
-    <div class="imgDiv">
-    
-    	<!-- show country head image -->
-    	<a href="<?php echo $headWikiLink; ?>" target="_blank"><img style ="width: 183px;right: 268px; height: 198px;" src="<?=get_template_directory_uri()?>/president_images/<?php echo $countryHeadImage; ?>"></a>
+    	<a href="<?php echo $headWikiLink; ?>"><img src="<?=get_template_directory_uri()?>/president_images/<?php echo $countryHeadImage; ?>"></a>
     	 
     	<img src="<?=get_template_directory_uri()?>/images/<?php echo $countryImage; ?>">
       <iframe src="//www.youtube.com/embed/?listType=playlist&list="<?php echo $playList; ?> class="country-playlist" style="margin:200px 0 0 0;"> </iframe>
