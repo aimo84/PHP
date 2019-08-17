@@ -38,22 +38,23 @@ get_header(); ?>
 				?>
     	<h3 class="country-title">Country: <b><?php echo $countryName; ?></b></h3>
 		
-		<span>
+		<table>
+		<tr>
 		
 		<!-- Show second header images if not null workable for PAN America only--> 
 			<?php 
-    	if(strlen($secondHeadImage)> 0){
-			
-				if(strlen($secondHeadQuote)> 0){
-    	    ?>	
-    	    	<h4 style="font-style: italic;"><?php echo $secondHeadQuote ?></h4>
+    	if(strlen($secondHeadImage)> 0){?>
+   			 	<td style="padding: 0px;display: inline-block; border: none !important;">
+   			 	<a href="<?php echo $secondHeadWikiLink; ?>" target="_blank"><img style ="width: 183px;right: 268px; height: 198px;display: inline-block;" src="<?=get_template_directory_uri()?>/president_images/<?php echo $secondHeadImage;?>"> </a></td>
+   			 	
+   			 	<?php	if(strlen($secondHeadQuote)> 0){?>	
+    	    				<td style="border: none;background: none;padding-left: -34px; border: none !important;display: inline-block;"><h4 style="font-style: italic;"><?php echo $secondHeadQuote ?></h4></td>
 				<?php }?>
-   			 	<a href="<?php echo $secondHeadWikiLink; ?>" target="_blank"><img style ="width: 183px;right: 268px; height: 198px;" src="<?=get_template_directory_uri()?>/president_images/<?php echo $secondHeadImage;?>"> </a>
     	 <?php 
     	 }
     	 ?>
-		 </span>
-    	
+		 </tr>
+		 </table>
     <div class="imgDiv">
     
     	<!-- show country head image -->
@@ -62,7 +63,7 @@ get_header(); ?>
     	<img src="<?=get_template_directory_uri()?>/images/<?php echo $countryImage; ?>">
       <iframe src="//www.youtube.com/embed/?listType=playlist&list="<?php echo $playList; ?> class="country-playlist" style="margin:200px 0 0 0;"> </iframe>
        <p><b>This website supports  #1 the United Nations World Tourism Organization's goal to maximize tourism's contribution to poverty reduction and increase awareness on the sector's development potential..</b></p> 
-	 <!-- #2 the ASEAN Tourism Strategic Plan 2016-2025 seeking to make a greater contribution towards the ASEAN integration goal in the post 2015 decade of moving to an economic growth scenario that is more “inclusive,” “green” and “knowledge-based -->
+	 	#2 the ASEAN Tourism Strategic Plan 2016-2025 seeking to make a greater contribution towards the ASEAN integration goal in the post 2015 decade of moving to an economic growth scenario that is more “inclusive,” “green” and “knowledge-based
 	 
 	  </div>
 	    <table border="0" width="500" class="video" >
@@ -84,6 +85,35 @@ get_header(); ?>
 </table> 
 
 	  </div>
+	  
+	   <h3> Donate cash or your skills to help finish this remaining part. Contact "info@7millionjobs.com" +855 965 975 998</h3>
+<!-- HTML Code -->
+<table class="GeneratedTable">
+<thead>
+<tr>
+<th>Click To Meet Local People</th>
+<th>Click To Upload Your Video</th>
+<th>Barter - Trade Your Skills</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td><h5>Profitable Ideas & Video Tutorials</h5></td>
+<td><h5>Community Development Projects</h5></td>
+<td><h5>Scammed? Warn Other Tourists</h5></td>
+</tr>
+<tr>
+  <td><h5>1st 7 Million Jobs TV Host's photo</h5></td>
+  <td><h5>2nd 7 Million Jobs TV Host's photo</h5></td>
+<td><h5>3rd 7 Million Jobs TV Host's photo</h5></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 	  	
     <?php }
 
